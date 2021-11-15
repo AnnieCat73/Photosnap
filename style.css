@@ -21,17 +21,17 @@
   --spacer: 1rem;
   
   
-  /* small screen font-sizes */
- 
-  --fs-300: /*pp*/
+  /* small screen font-sizes - 16px is base font-size */
+  
+  --fs-300: 0.75rem; /*12px*/
   --fs-400: 0.938rem;/*15px same on all sizes*/
-  --fs-500: /*px*/
-  --fs-600: /*px*/
-  --fs-700: /*px*/
-  --fs-900: /*px
+  --fs-500: 1rem;/*px*/
+  --fs-600: 1.125rem; /*px*/
+  --fs-700: 1.5rem;/*24px/h2 medium*/
+  --fs-900: 2rem;/*h1/h2 large*/
 
-  --fw-400: 400;
-  --fw-700: 700;
+  --fw-regular-400: 400;
+  --fw-bold-700: 700;
 
   --clr-neutral-100: #ffffff;/*bg*/
   --clr-neutral-700: #171717;/*title*/
@@ -46,6 +46,9 @@
 
 @media (min-width: 40em) {/*tablet*/
   :root {
+
+
+    --fs-900: 2.5rem;/*same for desktop*/
 
     
     
@@ -65,6 +68,9 @@
   box-sizing: border-box;
 }
 
+
+
+/*
 h1,
 .h1,
 h2,
@@ -74,7 +80,7 @@ h3,
 h4,
 .h4 {
   line-height: 1;
-}
+}*/
 
 body,
 h1,
@@ -110,19 +116,40 @@ body {
   
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
-  line-height: 1.6;/*25px*/
-  letter-spacing: 0px;
+  font-weight: var(--fw-regular-400);
+  line-height: 1.5625;/*25px*/
+  
 }
 
 
 /* typography */
 
-h1,
-h2,
-h3,
-.section-subtitle {
-  font-family: var(--ff-sans);
+.large-heading {/*for h1/h2 large*/
+  font-size: var(--fs-900);
+  font-weight: var(--fw-bold-700);
+  letter-spacing: 3.33px;
+  line-height: 3;
+  text-transform: uppercase;
 }
+
+.medium-heading {/*h2 - same for all*/
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold-700);
+  letter-spacing: 3; /*25px*/
+}
+
+.small-heading {
+  font-size: var(--fs-600);
+  line-height: 3;
+}
+
+.small-headingxl {
+  font-size: var(--fs-300);/*same for all*/
+  letter-spacing: 2px;
+  /*text-transform: uppercase;*/
+}
+
+
 
 .accent {
   color: ;
@@ -133,6 +160,12 @@ a:focus {
   color: var(--clr-primary-400);
 }
 
+@media (min-width: 35em) {
+
+  .large-heading {
+    letter-spacing: 4.17px;
+  }
+}
 
 /* utility/helper classes */
 
@@ -163,12 +196,41 @@ a:focus {
   padding: .5em 1em;
 }
 
+.arrow-btn-light {
+  color: var(--light-100);
+  font-size: var(--fs-300);/*12px*/
+  font-weight: var(--fw-bold-700);
+  letter-spacing: 2px;
+}
+
+
+
 .btn-accent {
-  background-color: );
-  color: ;
+  background-color: var(--dark-100);
+  color: var(--light-100);
 
 }
 
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: var(--dark-600);
+  color: var(--dark-100);
+}
+
+
+.btn-light {
+  background-color: var(--light-100);
+  color: var(--dark-100);
+
+}
+
+.btn-light:hover,
+.btn-light:focus {
+  background-color: var(--dark-600);
+  color: var(--dark-100);
+
+}
 
 /* general layout classes */
 
