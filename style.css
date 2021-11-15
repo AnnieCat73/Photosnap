@@ -26,6 +26,7 @@
   /* small screen font-sizes - 16px is base font-size */
   
   --fs-300: 0.75rem; /*12px*/
+  --fs-350: 0.813rem; /*13px author*/
   --fs-400: 0.938rem;/*15px same on all sizes*/
   --fs-500: 1rem;/*px*/
   --fs-600: 1.125rem; /*px*/
@@ -241,6 +242,11 @@ a:focus {
 
 }
 
+.author {
+  font-size: var(--fs-350);
+  color: var(--light-100);
+}
+
 /* general layout classes */
 
 .container {
@@ -326,6 +332,49 @@ section {
  
 }
 
+
+/*Hero*/
+
+.arrow-img {
+  color: var(--light-100);/*not working*/
+  height: 1rem;
+  
+}
+
+/* text overlay code ex:
+
+.example img {
+  width: 100%;
+  position: relative;
+}
+
+.example .overlay {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 30px;
+}
+
+or store it in css with pseudo el
+<div class="example">
+  <img  class="background-image" src="https://ik.imagekit.io/ikmedia/tr:w-1200,h-400/accessories_banner.jpg">
+</div>
+.example img{
+  width: 100%;
+}
+
+.example::after {
+  content: "Multi-line\00000a text";
+  position: absolute;
+  top: 80px;
+  white-space: pre;
+  right: 15px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 30px;
+/*
 
 
 
