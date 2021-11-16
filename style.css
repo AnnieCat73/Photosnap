@@ -113,14 +113,18 @@ img {
   max-width: 100%;
   
   display: block;
- }
+}
+
+a {
+  text-decoration: none;
+}
 
 body {
-  
+  min-height: 100vh;
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
   font-weight: var(--fw-regular-400);
-  line-height: 1.5625;/*25px*/
+  line-height: 1.6;
   
 }
 
@@ -169,23 +173,20 @@ a:focus {
   }
 }
 
-@media (min-width: 40em) {/*48em is tablet*/
+@media (min-width: 48em) {/*48em is tablet*/
 
-    .large-heading {
-      line-height: 3;/*probably not correct*/
-    }
+    
+}
+
+@media (min-width: 90em) {
+  .large-heading {
+   
+  }
 }
 
 /* utility/helper classes */
 
-.heading {
-  
-}
 
-
-.text {
-  
-}
 
 .bg-dark {
   background-color: var(--dark-100);
@@ -220,6 +221,15 @@ a:focus {
   font-weight: var(--fw-bold-700);
   letter-spacing: 2px;
 }
+
+.arrow-btn-dark {
+  color: var(--dark-100);
+  font-size: var(--fs-300);/*12px*/
+  font-weight: var(--fw-bold-700);
+  letter-spacing: 2px;
+}
+
+
 
 
 
@@ -267,13 +277,17 @@ a:focus {
 }
 
 section {
-  padding: 8.125rem 0;
+  padding: 
 }
 
 
-.home-flow > * {
-  margin-top: 3rem;
+
+
+
+.flow > *:not(:first-child) {
+  margin-top: 1.5rem;
 }
+
 .flow-content > * + * {
   margin-top: 1.25rem;
 }
@@ -283,11 +297,7 @@ section {
 }
 
 
-.split {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2em;
-}
+
 
 .flow-content > * + * {
   margin-top: var(--flow-spacer, 1em);
@@ -313,6 +323,21 @@ section {
 
   .split {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 48em) {
+  
+}
+
+@media (min-width: 90em) {
+  
+  
+  
+
+  .main-grid {
+    grid-template-columns: minmax(1.5rem, 1fr) minmax(0px, 100rem) minmax(1.5rem, 1fr);
+    
   }
 }
 
@@ -399,8 +424,26 @@ section {
   grid-column: 2;
 }
 
+.home-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
+.arrow-btn-container {
+  display: flex;
+  text-transform: uppercase;
+  column-gap: 2em;
+  
+}
 
+.margin-text {
+  margin: 2rem 0;
+}
+
+.padding-hero {
+  padding: 5rem 2rem;
+}
 
 
 
@@ -443,9 +486,93 @@ or store it in css with pseudo el
   font-weight: bold;
   text-align: right;
   font-size: 30px;
-/*
+*/
 
+@media (min-width: 48em) {
 
+  /*hero*/
+  .create {
+    flex-direction: row;
+  }
+
+  .beautiful {
+    flex-direction: row-reverse;
+  }
+
+  .designed {
+    flex-direction: row;
+  }
+
+  .create-info,
+  .beautiful-info,
+  .designed-info {
+    flex-basis: 70%;
+  }
+
+  .create-img-container,
+  .beautiful-img-container,
+  .designed-img-container {
+    flex-basis: 30%;
+  }
+
+  .home-img {
+    height: 100%;
+  }
+
+  
+
+  .padding-hero {
+    padding: 10rem 4rem;
+  }
+  
+}
+
+@media (min-width: 90em) {
+  
+  /*nb hero only*/
+  .main-grid {
+    grid-template-columns: minmax(1.5rem, 1fr) minmax(0px, 50rem) minmax(0px, 50rem) minmax(1.5rem, 1fr);
+  }
+
+  .main-grid > * {
+    grid-column: 2 / 4;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .margin-text {
+    margin: 3rem 0;
+  }
+
+  
+  .create-info {
+    flex-basis: 40%;
+    
+  }
+
+  .create-img-container {
+    flex-basis: 60%;
+  }
+
+  .beautiful-info {
+    flex-basis: 40%;
+  }
+
+  .beautiful-img-container {
+    flex-basis: 60%;
+  }
+
+  .designed-info {
+    flex-basis: 40%;
+  }
+  .designed-img-container {
+    flex-basis: 60%;
+  }
+  
+  
+  
+
+}
 
 
 /*Stories*/
