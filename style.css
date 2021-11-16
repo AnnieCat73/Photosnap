@@ -341,6 +341,12 @@ section {
   
 }
 
+.light-arrow {
+  
+  /*filter: invert(0.5); either works*/
+  filter:  brightness(0) invert(1);
+}
+
 /* text overlay code ex:
 
 .example img {
