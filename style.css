@@ -549,40 +549,7 @@ section {
 
 }
 
-/* text overlay code ex:
 
-.example img {
-  width: 100%;
-  position: relative;
-}
-
-.example .overlay {
-  position: absolute;
-  top: 80px;
-  right: 15px;
-  font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-}
-
-or store it in css with pseudo el
-<div class="example">
-  <img  class="background-image" src="https://ik.imagekit.io/ikmedia/tr:w-1200,h-400/accessories_banner.jpg">
-</div>
-.example img{
-  width: 100%;
-}
-
-.example::after {
-  content: "Multi-line\00000a text";
-  position: absolute;
-  top: 80px;
-  white-space: pre;
-  right: 15px;
-  font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-*/
 
 
 /*Stories-links*/
@@ -634,40 +601,7 @@ or store it in css with pseudo el
 }
 
 
-/* text overlay code ex:
 
-.example img {
-  width: 100%;
-  position: relative;
-}
-
-.example .overlay {
-  position: absolute;
-  top: 80px;
-  right: 15px;
-  font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-}
-
-or store it in css with pseudo el
-<div class="example">
-  <img  class="background-image" src="https://ik.imagekit.io/ikmedia/tr:w-1200,h-400/accessories_banner.jpg">
-</div>
-.example img{
-  width: 100%;
-}
-
-.example::after {
-  content: "Multi-line\00000a text";
-  position: absolute;
-  top: 80px;
-  white-space: pre;
-  right: 15px;
-  font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-*/
 
 
 @media (min-width: 48em) {
@@ -691,7 +625,6 @@ or store it in css with pseudo el
   }
   .stories-links-gallery {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    outline: red solid 1px;
     
     
   }
