@@ -53,6 +53,7 @@
 
     --fs-900: 2.5rem;/*same for desktop*/
 
+
     
     
   }
@@ -267,14 +268,13 @@ a:focus {
 
 /* general layout classes */
 
-.main-grid {
-  display: grid;
-  grid-template-columns: minmax(1.5rem, 1fr) minmax(0px, 35rem) minmax(1.5rem, 1fr);
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+ 
 }
 
-.main-grid > * {
-  grid-column: 2;
-}
+
 
 section {
   padding: 
@@ -322,15 +322,10 @@ section {
 
 
 
-@media (min-width: 40em) {
- 
 
-  .split {
-    flex-direction: row;
-  }
-}
 
 @media (min-width: 48em) {
+  
   
 }
 
@@ -339,10 +334,7 @@ section {
   
   
 
-  .main-grid {
-    grid-template-columns: minmax(1.5rem, 1fr) minmax(0px, 100rem) minmax(1.5rem, 1fr);
-    
-  }
+  
 }
 
 /* components */
@@ -356,77 +348,109 @@ section {
 
 /*menu in mobile and tables*/
 
+.header {
+  margin: 2rem 1.8rem;
+  
+}
+
 .header .header-desktop {
+  display: none;
+ 
+ 
+}
+
+
+
+/*for now*/
+
+.navigation-inner {
   display: none;
 }
 
-@media (min-width: 40em) {
+.header-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.open {
+  border: 0;
+  background: none;
+}
+
+/****/
+
+@media (min-width: 48em) {
+
+  
+
   .header .header-mobile {
     display: none;
   }
 
   .header .header-desktop {
     display: block;
+   
   }
 
  
 }
 
+@media (min-width: 90em) {
 
-/*Hero*/
-
-.hero {
-  grid-template-areas:
-    "create create create"
-    "beautiful beautiful beautiful"
-    "designed designed designed";
-}
-
-
-.create {
-  grid-area: create;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.create-info {
-  display: grid;
-  grid-template-columns: minmax(1.5rem, 1fr) minmax(0px, 32rem) minmax(1.5rem, 1fr);
-}
-
-.create-info > * {
-  grid-column: 2;
-}
-
-.beautiful {
-  grid-area: beautiful;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.beautiful-info {
-  display: grid;
-  grid-template-columns: minmax(1.5rem, 1fr) minmax(0px, 32rem) minmax(1.5rem, 1fr);
-}
-
-.beautiful-info > * {
-  grid-column: 2;
-}
-
-.designed {
-  grid-area: designed;
-  display: flex;
-  flex-direction: column-reverse;
   
 }
 
+
+/*Hero*/
+
+.container .hero {
+  width: 100%;
+  
+}
+
+
+
+
+.create {
+  display: flex;
+  flex-direction: column-reverse;
+ 
+}
+
+.create-info {
+  
+  
+}
+
+.create-info > * {
+  
+}
+
+.beautiful {
+  display: flex;
+  flex-direction: column-reverse;
+}  
+
+.beautiful-info {
+  
+}
+
+.beautiful-info > * {
+  
+}
+
+.designed {
+  display: flex;
+  flex-direction: column-reverse;
+ 
+}
+
 .designed-info {
-  display: grid;
-  grid-template-columns: minmax(1.5rem, 1fr) minmax(0px, 32rem) minmax(1.5rem, 1fr);
+  
 }
 
 .designed-info > * {
-  grid-column: 2;
+ 
 }
 
 .home-img {
@@ -447,7 +471,7 @@ section {
 }
 
 .padding-hero {
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
 }
 
 
@@ -463,6 +487,9 @@ section {
 @media (min-width: 48em) {
 
   /*hero*/
+
+  
+  
   .create {
     flex-direction: row;
   }
@@ -478,81 +505,54 @@ section {
   .create-info,
   .beautiful-info,
   .designed-info {
-    flex-basis: 70%;
+    flex-basis: 60%;
+    display: grid;
+    align-items: center;
+    
   }
 
   .create-img-container,
   .beautiful-img-container,
   .designed-img-container {
-    flex-basis: 30%;
+    flex-basis: 40%;
+    
   }
 
   .home-img {
     height: 100%;
+    object-position: center center;
+  }
+
+  .create-img {
+
+  }
+
+  .beautiful-img {
+    object-position: left center;
+  }
+
+  .designed-img {
+    object-position: bottom center;
   }
 
   
 
   .padding-hero {
-    padding: 10rem 4rem;
+    padding: 7rem 6rem;
   }
   
 }
 
-@media (min-width: 90em) {
-  
-  /*nb hero only*/
-  .main-grid {
-    grid-template-columns: minmax(1.5rem, 1fr) minmax(0px, 50rem) minmax(0px, 50rem) minmax(1.5rem, 1fr);
-  }
 
-  .main-grid > * {
-    grid-column: 2 / 4;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .margin-text {
-    margin: 3rem 0;
-  }
-
-  
-  .create-info {
-    flex-basis: 40%;
-    
-  }
-
-  .create-img-container {
-    flex-basis: 60%;
-    align-self: stretch;
-  }
-
-  .beautiful-info {
-    flex-basis: 40%;
-  }
-
-  .beautiful-img-container {
-    flex-basis: 60%;
-    align-self: stretch;
-  }
-
-  .designed-info {
-    flex-basis: 40%;
-  }
-  .designed-img-container {
-    flex-basis: 60%;
-    align-self: stretch;
-  }
-  
-  
-  
-
-}
 
 
 
 
 /*Stories-links*/
+
+.stories-links .container {
+  width: 100%;
+}
 
 .background-img {
   width: 100%;
@@ -562,9 +562,7 @@ section {
   
 }
 
-.stories-links > * {
-  grid-column: 1 / -1;
-}
+
 
 .stories-links-gallery {
   display: grid;
@@ -579,7 +577,7 @@ section {
 .overlay {
   position: absolute;
   bottom: 40px;
-  left: 1.5rem;
+  left: 2rem;
   width: 100%;
 }
 
@@ -610,9 +608,6 @@ section {
     grid-template-columns: 1fr 1fr;
   }
 
-  .story {
-    
-  }
   
   
 }
@@ -628,11 +623,85 @@ section {
     
     
   }
+}
 
-  .story {
+/*app-details*/
+
+
+.app-details {
+ margin: 5rem 0;
+}
+
+.app-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5em 0;
+  flex-basis: 100%;
+  row-gap: 2em;
+  
+}
+
+.app-details-container {
+  
+  display: flex;
+  flex-direction: column;
+  
+  gap: 1.8em;
+  
+} 
+ 
+
+.app-detail .flow {
+  margin-top: 1.3rem;
+}
+
+.app-details-text {
+  text-align: center;
+  padding: 0 2em;
+  
+}
+
+@media (min-width: 48em) {
+  
+  .app-details-text {
+    
+    padding: 0 10em;
     
   }
 }
+
+@media (min-width: 90em) {
+
+  
+
+ 
+  .app-details-container {
+   
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .app-detail {
+   flex-basis: 33%;
+  }  
+  
+  .upload {
+    align-self: stretch;
+  }
+  .upload .app-details-text {
+    margin-top: auto;
+  }
+
+  .app-details-text {
+    
+    padding: 0 4em;
+    
+  }
+}
+
+
+
 
 
 
