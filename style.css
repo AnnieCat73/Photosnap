@@ -375,7 +375,22 @@ section {
 .open {
   border: 0;
   background: none;
+  cursor: pointer;
+  position: relative;
+  transition: all .5s ease-in-out;
 }
+
+.open-img {
+  transition: all .5s ease-in-out;
+}
+
+.close {
+  border: 0;
+  background: none;
+  display: none;
+}
+
+
 
 /****/
 
