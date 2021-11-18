@@ -365,11 +365,12 @@ section {
 /*menu mobile*/
 
 .header .header-mobile {/*MIGHT TAKE THIS OFF IF CAN'T GET IT WORKING*/
-  position: fixed;
+  position: fixed;/*NEEED TO MOVE CONTETN DOWN AS COVERS IMG MOBILE*/
   top: 0;
   width: 100%;
   background-color: var(--light-100);
   z-index: 90;
+  
 }
 
 .logo {
@@ -625,6 +626,18 @@ section {
     
   }
 
+  .create-info p,
+  .beautiful-info p,
+  .designed-info p {
+    max-width: 40ch;
+  }
+
+  .create-info h1,
+  .beautiful-info h1,
+  .designed-info h1 {
+    max-width: 20ch;
+  }
+
   .create-img-container,
   .beautiful-img-container,
   .designed-img-container {
@@ -637,9 +650,7 @@ section {
     object-position: center center;
   }
 
-  .create-img {
-
-  }
+  
 
   .beautiful-img {
     object-position: left center;
@@ -652,12 +663,22 @@ section {
   
 
   .padding-hero {
-    padding: 7rem 6rem;
+    padding: 7rem 2rem;
   }
   
 }
 
+@media (min-width: 70em) {
 
+  .create-info,
+  .beautiful-info,
+  .designed-info {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  
+}
 
 
 
@@ -725,6 +746,8 @@ section {
   
   
 }
+
+
 
 
 @media (min-width: 90em) {
