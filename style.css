@@ -213,7 +213,7 @@ a:focus {
   line-height: 1.125;
   text-transform: uppercase;
   text-decoration: none;
-  padding: .5em 1em;
+  padding: 1em 1.5em;
 }
 
 .arrow-btn-light {
@@ -364,6 +364,14 @@ section {
 
 /*menu mobile*/
 
+.header .header-mobile {/*MIGHT TAKE THIS OFF IF CAN'T GET IT WORKING*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--light-100);
+  z-index: 90;
+}
+
 .logo {
   padding: 2rem 0 2rem 1.8rem;
 }
@@ -465,7 +473,7 @@ section {
 
 @media (min-width: 48em) {
 
-  
+  /*header tablet*/
 
   .header .header-mobile {
     display: none;
@@ -473,7 +481,27 @@ section {
 
   .header .header-desktop {
     display: block;
-   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.8rem 2rem;
+  }
+
+  .header-desktop .header-nav {
+    display: flex;
+    gap: 2em;
+  }
+
+  
+
+  .header-desktop .logo-desktop,
+  .header-desktop .btn-desktop {
+    flex: 1;
+  }
+
+  .btn-desktop {
+    text-align: right;
+    
   }
 
  
@@ -481,7 +509,9 @@ section {
 
 @media (min-width: 90em) {
 
-  
+  .header .header-desktop {
+    padding: 0 5em 0 5em;
+  }
 }
 
 
@@ -784,6 +814,24 @@ section {
   }
 }
 
+
+/* Footer */
+
+.footer {
+  background-color: var(--dark-100);
+}
+
+.footer .logo-img {
+  
+}
+
+.footer-content {
+  color: var(--light-100);
+}
+
+.footer-nav .nav-item {
+  color: var(--light-100);
+}
 
 
 
