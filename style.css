@@ -406,6 +406,10 @@ section {
   display: none;
 }
 
+.dropdown .jsmenu {
+  display: block;
+}
+
 .dropdown-menu {
   position: absolute;
   left: 0px;
@@ -919,15 +923,77 @@ section {
 }
 
 
-
-
-
 .copy {
   grid-area: copy;
   opacity: 0.5;
   font-size: var(--fs-350);
-  letter-spacing: ;
+  
 }
+
+@media (min-width: 48em) {
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 18rem;
+    column-gap: 2em;
+    padding: 4rem 2rem;
+
+  }
+
+  .footer-details {
+    grid-column: 1;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+      "logo"
+      "footer-nav"
+      "social";
+    row-gap: 2em;
+    justify-items: start;
+    
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .footer .logo {
+    align-self: start;
+    padding: 0;
+  }
+
+  .social {
+    align-self: end;
+  }
+
+  .footer-other {
+    grid-column: 2;
+    justify-items: end;
+  }
+
+  .footer-invite {
+    align-self: start;
+    gap: 2em;
+  }
+
+  .footer-invite .btn {
+    padding: 0;
+  }
+
+  .copy {
+    align-self: end;
+  }
+
+
+  
+    
+    
+  
+}
+  
+
+
+
 
 
 

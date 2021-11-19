@@ -19,3 +19,25 @@ closeBtn.addEventListener("click", () => {
   dropdown.style.display = "none";
 
 });
+
+/*menuBtn.addEventListener("click", () => {
+
+  if () {
+
+  } else {
+
+
+
+
+
+});
+
+closeBtn.addEventListener("click", () => {
+  if () {
+
+  } else {
+
+  }
+
+});*/
+
