@@ -129,6 +129,10 @@ body {
   
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 
 /* typography */
 
@@ -269,7 +273,7 @@ a:focus {
 /* general layout classes */
 
 .container {
-  max-width: 160rem;
+  max-width: 160rem;/*160rem*/
   margin: 0 auto;
  
 }
@@ -348,10 +352,7 @@ section {
 
 /*menu in mobile and tables*/
 
-.header {
-  /*margin: 2rem /*1.8rem*/;
-  
-}
+
 
 .header .header-desktop {
   display: none;
@@ -523,7 +524,7 @@ section {
 /*Hero*/
 
 .container .hero {
-  width: 100%;
+  /*width: 100%;*/
   
 }
 
@@ -680,6 +681,14 @@ section {
     justify-content: center;
     align-items: center;
     text-align: left;
+    flex-basis: 40%;
+  }
+
+  .create-img-container,
+  .beautiful-img-container,
+  .designed-img-container {
+    flex-basis: 60%;
+    
   }
   
 }
@@ -689,8 +698,8 @@ section {
 
 /*Stories-links*/
 
-.stories-links .container {
-  width: 100%;
+.stories-links {
+  /*width: 100%*/
 }
 
 .background-img {
@@ -987,8 +996,11 @@ section {
 
 }
 
-@media (min-width: 70em) {
+@media (min-width: 80em) {
 
+  .footer .container {
+    
+  }
   .footer-content {
     padding: 4rem 10rem;
   }
