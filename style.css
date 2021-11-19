@@ -934,10 +934,10 @@ section {
 
   .footer-content {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 18rem;
+    grid-template-rows: 12rem;
     column-gap: 2em;
     padding: 4rem 2rem;
-
+    
   }
 
   .footer-details {
@@ -985,10 +985,42 @@ section {
   }
 
 
-  
+}
+
+@media (min-width: 70em) {
+
+  .footer-content {
+    padding: 4rem 10rem;
+  }
+
+  .footer-details {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+      "logo footer-nav"
+      ". footer-nav"
+      "social footer-nav";
+    column-gap: 1em;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+   
+  }
+
+  .footer-nav .nav-item {
+    margin: 0;
+  }
+
+  .social {
+    align-self: end;
+    margin: 0;
+  }
+
+  .copy {
+    align-self: end;
     
-    
-  
 }
   
 
