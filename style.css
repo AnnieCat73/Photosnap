@@ -956,6 +956,20 @@ body, html {
   color: var(--light-100);
 }
 
+.stories-gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  
+}
+
+.story .arrow-btn-container {
+  width: 80%;
+  /*display: flex;
+  text-transform: uppercase;
+  column-gap: 2em;*/
+  justify-content: space-between;
+}
+
 
 
 
@@ -968,6 +982,8 @@ body, html {
   .stories-hero .stories-hero-mobile {
     display: none;
   }
+
+  
 }
   
 
