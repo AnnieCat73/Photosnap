@@ -172,6 +172,10 @@ body, html {
 
 /* utility/helper classes */
 
+.light {
+  color: var(--light-100);
+}
+
 
 .bg-dark {
   background-color: var(--dark-100);
@@ -266,6 +270,10 @@ body, html {
 
 .flow-xs {
   margin-top: .6rem;
+}
+
+.flow-xsdown {
+  margin-bottom: .6rem;
 }
 
 .flow-content > * + * {
@@ -914,6 +922,51 @@ body, html {
 
   .copy {
     align-self: end;
+  }
+}
+
+/* PAGE SPECIFIC */
+
+/*********************/
+/** STORIES
+/*********************/
+
+/*Stories-hero*/
+
+.stories-hero-large {
+  background: url(./assets/stories/tablet/moon-of-appalacia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20rem 0;
+  
+}
+
+.bold-name {
+  font-weight: var(--fw-bold-700);
+}
+
+.stories-hero .stories-hero-large {
+  display: none;
+}
+
+/* Stories-gallery*/
+
+.date {
+  font-size: var(--fs-350);
+  color: var(--light-100);
+}
+
+
+
+
+@media (min-width: 48em) {
+
+  .stories-hero .stories-hero-large {
+    display: block;
+  }
+  
+  .stories-hero .stories-hero-mobile {
+    display: none;
   }
 }
   
