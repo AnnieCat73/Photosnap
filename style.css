@@ -268,6 +268,10 @@ body, html {
   margin-top: 1.5rem;
 }
 
+.flow-middle > *:not(:first-child)  {
+  margin-top: 1.2rem;
+}
+
 .flow-xs {
   margin-top: .6rem;
 }
@@ -608,11 +612,16 @@ body, html {
   /*width: 100%*/
 }
 
+
+
 .background-img {
   width: 100%;
   
+  
   object-fit: cover;
   filter: brightness(70%);
+  
+  
 }
 
 .stories-links-gallery {
@@ -623,6 +632,7 @@ body, html {
 .story {
   position: relative;
   justify-self: stretch;
+ 
 }
 
 .story:hover,
@@ -933,12 +943,17 @@ body, html {
 
 /*Stories-hero*/
 
-.stories-hero-large {
-  background: url(./assets/stories/tablet/moon-of-appalacia.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 20rem 0;
-  
+/*.header .header-mobile {
+  display: none;
+}*/
+
+.stories-hero-content {
+  padding: 3rem 2rem;
+}
+
+.stories-hero-img {
+  object-fit: cover;
+  filter: brightness(60%);
 }
 
 .bold-name {
@@ -948,6 +963,64 @@ body, html {
 .stories-hero .stories-hero-large {
   display: none;
 }
+
+.stories-hero .arrow-btn-light {
+  text-transform: uppercase;
+}
+
+@media (min-width: 48em) {
+
+  .stories-hero-large {
+    background: url(./assets/stories/tablet/moon-of-appalacia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem 0 10rem 0;
+    background-position: center;
+    filter: brightness(60%);
+  }
+
+  .stories-hero-content {
+    max-width: 24rem;
+    margin: 0 2rem;
+  }
+
+  .stories-hero .stories-hero-large {
+    display: block;
+  }
+  
+  .stories-hero .stories-hero-mobile {
+    display: none;
+  }
+
+  
+}
+
+@media (min-width: 75em) {
+
+  .stories-hero-large {
+    background: url(./assets/stories/desktop/moon-of-appalacia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem 0 10rem 0;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+  
+}
+
+@media (min-width: 90em) {
+
+  .stories-hero-content {
+    padding: 0 0 0 5em;
+  }
+}
+  
+
+
+
+
+
 
 /* Stories-gallery*/
 
@@ -962,30 +1035,21 @@ body, html {
   
 }
 
+.stories-gallery .background-img{
+  
+  align-self: stretch;
+}
+
 .story .arrow-btn-container {
   width: 80%;
-  /*display: flex;
-  text-transform: uppercase;
-  column-gap: 2em;*/
   justify-content: space-between;
 }
 
 
 
 
-@media (min-width: 48em) {
 
-  .stories-hero .stories-hero-large {
-    display: block;
-  }
-  
-  .stories-hero .stories-hero-mobile {
-    display: none;
-  }
 
-  
-}
-  
 
 
 
