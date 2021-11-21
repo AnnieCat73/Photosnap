@@ -1070,6 +1070,70 @@ body, html {
 /** FEATURES
 /*********************/
 
+.features-hero .features-hero-large {
+  display: none;
+}
+
+.features-hero-mobile {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 48em) {
+
+  
+
+  .features-hero .features-hero-mobile {
+    display: none;
+  }
+
+  .features-hero .features-hero-tablet {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .features-hero-tablet .features-hero-info {
+    flex-basis: 70%;
+  }
+  .features-hero-tablet .features-hero-img-container {
+    flex-basis: 30%;
+  }
+
+  
+}
+
+@media (min-width: 70em) {
+
+  .features-hero .features-hero-mobile,
+  .features-hero .features-hero-tablet {
+    display: none;
+  }
+
+  .features-hero .features-hero-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .features-hero-desktop .features-hero-info {
+    flex-basis: 40%;
+  }
+  .features-hero-desktop .features-hero-img-container {
+    flex-basis: 60%;
+  }
+
+}
+
 
 
 
