@@ -937,6 +937,32 @@ body, html {
 
 /* PAGE SPECIFIC */
 
+/*All extra pages hover states - disabled in header and footer*/
+
+.stories .header .nav-item:hover,
+.stories .header .nav-item:focus {
+  pointer-events: none;
+}
+
+.stories .header .btn-desktop:hover,
+.stories .header .btn-desktop:focus {
+  pointer-events: none;
+}
+
+
+.stories .footer .nav-item:hover,
+.stories .footer .nav-item:focus {
+  pointer-events: none;
+}
+.stories .footer .social-link:hover,
+.stories .footer .social-link:focus {
+  pointer-events: none;
+}
+.stories .footer .footer-link:hover,
+.stories .footer .footer-link:focus {
+  pointer-events: none;
+}
+
 /*********************/
 /** STORIES
 /*********************/
