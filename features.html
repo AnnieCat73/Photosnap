@@ -1,68 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Photosnap| Features</title>
 </head>
-<body>
 
-  Stories
-  Features
-  Pricing
+<body class="features">
 
-  Get an invite
+  <header class="header">
 
-  Features
+    <div class="container">
 
-  We make sure all of our features are designed to be loved by every aspiring and even 
-  professional photograpers who wanted to share their stories.
+      <!--menu in tablet and desktop-->
+      <div class="header-desktop">
+        <a class="logo-desktop" href="#">
+          <img src="./assets/shared/desktop/logo.svg" alt="Photosnap logo" class="logo-img">
+        </a>
+        <ul class="header-nav">
+          <li><a href="stories.html" class="nav-item">Stories</a></li>
+          <li><a href="features.html" class="nav-item">Features</a></li>
+          <li><a href="pricing.html" class="nav-item">Pricing</a></li>
+        </ul>
+        <span class="btn-desktop">
+          <a href="#" class="btn-desktop btn btn-dark">Get an invite</a>
+        </span>
 
-  100% Responsive
+      </div>
 
-  No matter which the device you’re on, our site is fully responsive and stories 
-  look beautiful on any screen.
 
-  No Photo Upload Limit
 
-  Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share 
-  all of your stories in one go.
+      <!--Menu in mobile-->
+      <div class="header-mobile">
+        <a class="logo" href="#">
+          <img src="./assets/shared/desktop/logo.svg" alt="Photosnap logo" class="logo-img">
+        </a>
+        <!--dropdown-->
+        <div class="dropdown jsmenu">
+          <button aria-label="Open navigation" class="open">
+            <img src="./assets/shared/mobile/menu.svg" alt="Open navigation" class="open-img">
+          </button>
+          <button arial-label="Close navigation" class="close">
+            <img src="./assets/shared/mobile/close.svg" alt="Close navigation">
+          </button>
+          <div class="dropdown-menu">
+            <ul class="dropdown-list">
+              <li><a href="#" class="nav-item">Stories</a></li>
+              <li><a href="#" class="nav-item">Features</a></li>
+              <li><a href="#" class="nav-item">Pricing</a></li>
+              <a href="#" class="btn btn-dark invite">Get An Invite</a>
+            </ul>
 
-  Available to Embed
+          </div>
+        </div>
 
-  Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google 
-  Maps, and more. 
+      </div>
+    </div>
 
-  Custom Domain
+  </header>
+  <main>
 
-  With Photosnap subscriptions you can host your stories on your own domain. You can 
-  also remove our branding!
 
-  Boost Your Exposure
 
-  Users that viewed your story or gallery can easily get notifed of new and featured 
-  stories with our built in mailing list.
+  </main>
 
-  Drag & Drop Image
+  <footer class="footer">
 
-  Easily drag and drop your image and get beautiful shots everytime. No over the top 
-  tooling to add friction to creating stories.
+    <div class="container">
+      <div class="footer-content">
 
-  We're in Beta. Get your invite today!
-  
-  Get an invite
+        <div class="footer-details">
+          <a class="logo" href="#">
+            <img src="./assets/shared/svg/logo.svg" alt="Photosnap logo" class="logo-img">
+          </a>
+          <ul class="footer-nav">
+            <li><a href="stories.html" class="nav-item">Home</a></li>
+            <li><a href="stories.html" class="nav-item">Stories</a></li>
+            <li><a href="features.html" class="nav-item">Features</a></li>
+            <li><a href="pricing.html" class="nav-item">Pricing</a></li>
+          </ul>
+          <ul class="social">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <img src="./assets/shared/svg/facebook.svg" alt="Facebook">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <img src="./assets/shared/svg/youtube.svg" alt="You Tube">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <img src="./assets/shared/svg/twitter.svg" alt="Twitter">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <img src="./assets/shared/svg/pinterest.svg" alt="Pintrest">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <img src="./assets/shared/svg/instagram.svg" alt="Instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
 
-  Home
-  Stories
-  Features
-  Pricing
+        <div class="footer-other">
+          <div class="footer-invite">
+            <a href="#" class="footer-link btn">Get an invite</a>
+            <a href="#" class="light-arrow">
+              <img src="./assets/shared/desktop/arrow.svg" alt="Click on arrow button" class="arrow-img">
+            </a>
+          </div>
+          <p class="copy">Copyright 2019. All Rights Reserved</p>
+        </div>
 
-  Get an invite
+      </div>
+    </div>
 
-  Copyright 2019. All Rights Reserved
+
+  </footer>
+
+
+  <script src="./script.js"></script>
+
+
 
 </body>
+
 </html>
