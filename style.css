@@ -940,26 +940,37 @@ body, html {
 /*All extra pages hover states - disabled in header and footer*/
 
 .stories .header .nav-item:hover,
-.stories .header .nav-item:focus {
+.stories .header .nav-item:focus,
+.features .header .nav-item:hover, 
+.features .header .nav-item:focus {
   pointer-events: none;
 }
 
 .stories .header .btn-desktop:hover,
-.stories .header .btn-desktop:focus {
+.stories .header .btn-desktop:focus,
+.features .header .btn-desktop:hover,
+.features .header .btn-desktop:focus {
   pointer-events: none;
 }
-
 
 .stories .footer .nav-item:hover,
-.stories .footer .nav-item:focus {
+.stories .footer .nav-item:focus, 
+.features .footer .nav-item:hover,
+.features .footer .nav-item:focus {
   pointer-events: none;
 }
+
 .stories .footer .social-link:hover,
-.stories .footer .social-link:focus {
+.stories .footer .social-link:focus, 
+.features .footer .social-link:hover,
+.features .footer .social-link:focus {
   pointer-events: none;
 }
+
 .stories .footer .footer-link:hover,
-.stories .footer .footer-link:focus {
+.stories .footer .footer-link:focus, 
+.features .footer .footer-link:hover,
+.features .footer .footer-link:focus {
   pointer-events: none;
 }
 
