@@ -1080,10 +1080,20 @@ body, html {
   flex-direction: column-reverse;
 }
 
+
+
 .features-details-container {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+}
+
+.features .features-beta {
+  background-image: url(./assets/shared/mobile/bg-beta.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem 0;
 }
 
 
@@ -1115,6 +1125,19 @@ body, html {
     flex-basis: 30%;
   }
 
+
+
+  .features-hero-tablet .features-hero-info {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .features-hero-tablet .margin-text {
+    max-width: 42ch;
+  }
+
   .features-details-container {
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
@@ -1129,6 +1152,11 @@ body, html {
   
   .features-details-container .app-details-text {
     padding: 0em 0em;
+  }
+
+  .features .features-beta {
+    background-image: url(./assets/shared/tablet/bg-beta.jpg);
+    
   }
 
 
@@ -1149,7 +1177,16 @@ body, html {
 
   .features-hero-desktop .features-hero-info {
     flex-basis: 40%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+
+  .features-hero-desktop .margin-text {
+    max-width: 42ch;
+  }
+
   .features-hero-desktop .features-hero-img-container {
     flex-basis: 60%;
   }
@@ -1158,6 +1195,16 @@ body, html {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1.5em;
   }
+
+  .features .features-beta {
+    background-image: url(./assets/shared/desktop/bg-beta.jpg);
+    
+  }
+
+  .padding-hero {
+    padding: 7rem 2rem;
+  }
+
 
 }
 
