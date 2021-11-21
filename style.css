@@ -1088,12 +1088,17 @@ body, html {
   place-items: center;
 }
 
+.features-details-container .app-details-text {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .features .features-beta {
   background-image: url(./assets/shared/mobile/bg-beta.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 10rem 0;
+  padding: 4rem 0 2rem 0;
 }
 
 
@@ -1156,7 +1161,20 @@ body, html {
 
   .features .features-beta {
     background-image: url(./assets/shared/tablet/bg-beta.jpg);
-    
+    padding: 0rem 0rem;
+  }
+
+  .features-beta-container {
+    display: flex;
+  }
+
+  .features-beta .large-heading {
+    max-width: 16ch;
+  }
+
+  .features-beta .arrow-btn-container {
+    align-self: center;
+    margin: 0;
   }
 
 
@@ -1196,14 +1214,29 @@ body, html {
     column-gap: 1.5em;
   }
 
-  .features .features-beta {
-    background-image: url(./assets/shared/desktop/bg-beta.jpg);
-    
+  .features-details .padding-hero {
+    padding: 7rem 5em;
   }
 
-  .padding-hero {
-    padding: 7rem 2rem;
+  .features-details .app-details-text {
+    max-width: 38ch;
   }
+
+  .features .features-beta {
+    background-image: url(./assets/shared/desktop/bg-beta.jpg);
+    padding: 0;
+  }
+
+  .features-beta-container {
+    justify-content: space-between;
+  }
+
+  .features-beta .padding-hero {
+    padding: 4rem 10rem;
+  
+  }
+
+  
 
 
 }
