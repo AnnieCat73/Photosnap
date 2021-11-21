@@ -1028,8 +1028,6 @@ body, html {
   .stories-hero .stories-hero-mobile {
     display: none;
   }
-
-  
 }
 
 @media (min-width: 75em) {
@@ -1042,8 +1040,6 @@ body, html {
     background-position: center;
     min-height: 100vh;
   }
-
-  
 }
 
 @media (min-width: 90em) {
@@ -1063,11 +1059,9 @@ body, html {
 .stories-gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-  
 }
 
 .stories-gallery .background-img{
-  
   align-self: stretch;
 }
 
@@ -1091,8 +1085,6 @@ body, html {
   flex-direction: column-reverse;
 }
 
-
-
 .features-details-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -1112,17 +1104,6 @@ body, html {
   padding: 4rem 0 2rem 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 48em) {
 
   .features-hero .features-hero-mobile {
@@ -1140,8 +1121,6 @@ body, html {
   .features-hero-tablet .features-hero-img-container {
     flex-basis: 30%;
   }
-
-
 
   .features-hero-tablet .features-hero-info {
     align-self: stretch;
@@ -1162,10 +1141,8 @@ body, html {
 
   .features-details-container .upload img {
     padding-bottom: 2em;
-    
   }
 
-  
   .features-details-container .app-details-text {
     padding: 0em 0em;
   }
@@ -1187,13 +1164,9 @@ body, html {
     align-self: center;
     margin: 0;
   }
-
-
-  
 }
 
 @media (min-width: 70em) {
-
   .features-hero .features-hero-mobile,
   .features-hero .features-hero-tablet {
     display: none;
@@ -1244,13 +1217,13 @@ body, html {
 
   .features-beta .padding-hero {
     padding: 4rem 10rem;
-  
   }
-
-  
-
-
 }
+
+
+/*********************/
+/** PRICING
+/*********************/
 
 
 
