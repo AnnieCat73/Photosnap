@@ -1351,6 +1351,30 @@ input:checked + .slider:before {
   justify-self: center;
 }
 
+/*compare*/
+
+.compare-headings p {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-bold-700);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.compare-p, 
+.features-h {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-bold-700);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tick {
+  background-image: url(./assets/pricing/desktop/check.svg);
+  background-repeat: no-repeat;
+  height: 0.75rem;
+
+}
+
 
 
 @media (min-width: 48em) {
