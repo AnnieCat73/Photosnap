@@ -1072,15 +1072,15 @@ body, html {
 
 
 /*********************/
-/** FEATURES
+/** FEATURES /PRICING HERO
 /*********************/
 
-.features-hero .features-hero-tablet,
-.features-hero .features-hero-desktop {
+.pages-hero .pages-hero-tablet,
+.pages-hero .pages-hero-desktop {
   display: none;
 }
 
-.features-hero-mobile {
+.pages-hero-mobile {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -1096,7 +1096,7 @@ body, html {
   padding-right: 0;
 }
 
-.features .features-beta {
+.features .pages-beta {
   background-image: url(./assets/shared/mobile/bg-beta.jpg);
   background-position: center;
   background-size: cover;
@@ -1106,30 +1106,30 @@ body, html {
 
 @media (min-width: 48em) {
 
-  .features-hero .features-hero-mobile {
+  .pages-hero .pages-hero-mobile {
     display: none;
   }
 
-  .features-hero .features-hero-tablet {
+  .pages-hero .pages-hero-tablet {
     display: flex;
     flex-direction: row;
   }
 
-  .features-hero-tablet .features-hero-info {
+  .pages-hero-tablet .pages-hero-info {
     flex-basis: 70%;
   }
-  .features-hero-tablet .features-hero-img-container {
+  .pages-hero-tablet .pages-hero-img-container {
     flex-basis: 30%;
   }
 
-  .features-hero-tablet .features-hero-info {
+  .pages-hero-tablet .pages-hero-info {
     align-self: stretch;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .features-hero-tablet .margin-text {
+  .pages-hero-tablet .margin-text {
     max-width: 42ch;
   }
 
@@ -1147,37 +1147,37 @@ body, html {
     padding: 0em 0em;
   }
 
-  .features .features-beta {
+  .pages-beta  {
     background-image: url(./assets/shared/tablet/bg-beta.jpg);
     padding: 0rem 0rem;
   }
 
-  .features-beta-container {
+  .pages-beta-container {
     display: flex;
   }
 
-  .features-beta .large-heading {
+  .pages-beta .large-heading {
     max-width: 16ch;
   }
 
-  .features-beta .arrow-btn-container {
+  .pages-beta .arrow-btn-container {
     align-self: center;
     margin: 0;
   }
 }
 
 @media (min-width: 70em) {
-  .features-hero .features-hero-mobile,
-  .features-hero .features-hero-tablet {
+  .pages-hero .pages-hero-mobile,
+  .pages-hero .pages-hero-tablet {
     display: none;
   }
 
-  .features-hero .features-hero-desktop {
+  .pages-hero .pages-hero-desktop {
     display: flex;
     flex-direction: row;
   }
 
-  .features-hero-desktop .features-hero-info {
+  .pages-hero-desktop .pages-hero-info {
     flex-basis: 40%;
     align-self: stretch;
     display: flex;
@@ -1185,11 +1185,11 @@ body, html {
     justify-content: center;
   }
 
-  .features-hero-desktop .margin-text {
+  .pages-hero-desktop .margin-text {
     max-width: 42ch;
   }
 
-  .features-hero-desktop .features-hero-img-container {
+  .pages-hero-desktop .pages-hero-img-container {
     flex-basis: 60%;
   }
 
@@ -1206,16 +1206,16 @@ body, html {
     max-width: 38ch;
   }
 
-  .features .features-beta {
+  .features .pages-beta {/*.features*/
     background-image: url(./assets/shared/desktop/bg-beta.jpg);
     padding: 0;
   }
 
-  .features-beta-container {
+  .pages-beta-container {
     justify-content: space-between;
   }
 
-  .features-beta .padding-hero {
+  .pages-beta .padding-hero {
     padding: 4rem 10rem;
   }
 }
