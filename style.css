@@ -1085,6 +1085,9 @@ body, html {
   flex-direction: column-reverse;
 }
 
+
+/* features details */
+
 .features-details-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -1096,7 +1099,9 @@ body, html {
   padding-right: 0;
 }
 
-.features .pages-beta {
+/* features beta/pricing beta*/
+
+.pages-beta {
   background-image: url(./assets/shared/mobile/bg-beta.jpg);
   background-position: center;
   background-size: cover;
@@ -1106,6 +1111,7 @@ body, html {
 
 @media (min-width: 48em) {
 
+  /*features/pricing hero*/
   .pages-hero .pages-hero-mobile {
     display: none;
   }
@@ -1132,7 +1138,8 @@ body, html {
   .pages-hero-tablet .margin-text {
     max-width: 42ch;
   }
-
+  
+  /*features details*/
   .features-details-container {
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
@@ -1147,13 +1154,15 @@ body, html {
     padding: 0em 0em;
   }
 
-  .pages-beta  {
+  /*features/pricing beta*/
+  .pages .pages-beta  {
     background-image: url(./assets/shared/tablet/bg-beta.jpg);
     padding: 0rem 0rem;
   }
 
   .pages-beta-container {
     display: flex;
+    justify-content: space-between;
   }
 
   .pages-beta .large-heading {
@@ -1167,6 +1176,8 @@ body, html {
 }
 
 @media (min-width: 70em) {
+
+  /*features/pricing hero*/
   .pages-hero .pages-hero-mobile,
   .pages-hero .pages-hero-tablet {
     display: none;
@@ -1193,6 +1204,7 @@ body, html {
     flex-basis: 60%;
   }
 
+  /*features details*/
   .features-details-container {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1.5em;
@@ -1206,7 +1218,8 @@ body, html {
     max-width: 38ch;
   }
 
-  .features .pages-beta {/*.features*/
+  /*features/pricing beta*/
+  .pages .pages-beta {
     background-image: url(./assets/shared/desktop/bg-beta.jpg);
     padding: 0;
   }
@@ -1224,6 +1237,12 @@ body, html {
 /*********************/
 /** PRICING
 /*********************/
+
+@media (min-width: 48em) {
+
+  
+    
+}
 
 
 
