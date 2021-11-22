@@ -1375,7 +1375,45 @@ input:checked + .slider:before {
 
 }
 
+.pricing-compare-container-large {
+  display: none;
+}
 
+.pricing-compare-container-mobile {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+
+.features-h {
+  border-bottom: 1px solid var(--dark-100);
+  padding-bottom: 1em;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.tick-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--grey-100);
+  padding-bottom: 1em;
+}
+
+.basic-container {
+  display: flex;
+  flex-direction: column;
+  gap: .2em;
+  
+}
+
+.pricing-compare .padding-hero {
+  padding-top: 0;
+}
 
 @media (min-width: 48em) {
   
@@ -1397,6 +1435,18 @@ input:checked + .slider:before {
   .plan-price {
     text-align: right;
   }
+
+  /*compare*/
+
+  .pricing-compare-container-mobile {
+    display: none;
+  }
+
+  .pricing-compare-container-large {
+    display: block;
+  }
+
+
 }
 
 
