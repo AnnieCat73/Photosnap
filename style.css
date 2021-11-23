@@ -1450,7 +1450,7 @@ input:checked + .slider:before {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
-    gap: 3em;
+    gap: 4em;
     
   }
 
@@ -1567,7 +1567,7 @@ input:checked + .slider:before {
 }
 
 
-@media (min-width: 70em) {
+@media (min-width: 80em) {
 
   /*plans*/
   
@@ -1632,6 +1632,13 @@ input:checked + .slider:before {
   .pricing-plans .padding-hero {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  /*compare*/
+
+  .pricing-compare .padding-hero {
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 }
 
