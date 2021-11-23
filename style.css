@@ -15,8 +15,7 @@
   --accent-200: #bc7198;
   --accent-300: #ffc593;
   
-  --accent-100: #5a77ff;
-
+  
 
   /*font-family*/
   --ff-sans: 'DM Sans', sans-serif;
@@ -616,13 +615,14 @@ body, html {
 
 .background-img {
   width: 100%;
-  
-  
   object-fit: cover;
   filter: brightness(70%);
   
   
+  
 }
+
+
 
 .stories-links-gallery {
   display: grid;
@@ -638,6 +638,20 @@ body, html {
 .story:hover,
 .story:focus {
   transform: translateY(-20px);
+  border: 0px solid;
+  border-bottom: none;
+  position: relative;
+  
+}
+.story:hover::after,
+.story:focus::after {
+  content:"";
+  background: -webkit-linear-gradient(90deg, rgba(255,197,147,1) 0%, rgba(188,113,152,1) 50%, rgba(90,119,255,1) 89%);
+  display: block;
+  height: 6px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .overlay {
@@ -1061,7 +1075,7 @@ body, html {
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 }
 
-.stories-gallery .background-img{
+.stories-gallery .background-img {
   align-self: stretch;
 }
 
@@ -1243,7 +1257,6 @@ body, html {
 .toggle {
   display: flex;
   align-items: center;
-  
   justify-content: space-evenly;
 }
 
@@ -1260,14 +1273,12 @@ body, html {
   grid-template-columns: 1fr;
   row-gap: 2em;
 }
+
 .switch {
   position: relative;
   display: inline-block;
   width: 4rem;
   height: 2rem;
-
-  
-  
 }
 
 /* Hide default HTML checkbox */
@@ -1278,6 +1289,7 @@ body, html {
 }
 
 /* The slider */
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -1290,7 +1302,6 @@ body, html {
   transition: .4s;
   border-radius: 16px;
   border-radius: 16px;
-  
 }
 
 .slider:before {
@@ -1337,8 +1348,6 @@ input:checked + .slider:before {
   padding:4rem 2rem;
 }
 
-
-
 .price {
   font-size: var(--fs-950);
   font-weight: var(--fw-bold-700);
@@ -1372,7 +1381,6 @@ input:checked + .slider:before {
   background-image: url(./assets/pricing/desktop/check.svg);
   background-repeat: no-repeat;
   height: 0.75rem;
-
 }
 
 .pricing-compare-container-large {
@@ -1382,7 +1390,6 @@ input:checked + .slider:before {
 .pricing-compare-container-mobile {
   display: grid;
   grid-template-columns: 1fr;
-  
 }
 
 .features-h {
@@ -1395,8 +1402,6 @@ input:checked + .slider:before {
   flex-direction: column;
 }
 
-
-
 .tick-container {
   display: flex;
   justify-content: space-between;
@@ -1408,7 +1413,6 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   gap: .2em;
-  
 }
 
 .pricing-compare .padding-hero {
@@ -1418,6 +1422,7 @@ input:checked + .slider:before {
 @media (min-width: 48em) {
   
   /*plans*/
+
   .plan {
     grid-template-columns: 1fr 1fr;
     column-gap: 3em;
@@ -1451,7 +1456,6 @@ input:checked + .slider:before {
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
     gap: 4em;
-    
   }
 
   .pricing-compare-container-large .large-heading {
@@ -1469,7 +1473,6 @@ input:checked + .slider:before {
     padding-bottom: 1em;
     border-width: 100%;
     justify-items: center;
-    
   }
 
   .pricing-compare-container-large .compare-headings .features-h {
@@ -1610,7 +1613,6 @@ input:checked + .slider:before {
   .plan {
     grid-template-columns: 1fr;
     row-gap: 2em;
-    
     padding: 4rem 2rem;
   }
 
