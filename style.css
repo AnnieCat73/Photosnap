@@ -1020,9 +1020,38 @@ body, html {
   flex-direction: column-reverse;
 }
 
-.pages-hero-mobile .pages-hero-info {
+/*HOW TO GET THIS TO SHOW ONLY ON HERO IMG CHANGE HTML?? OK FOR PRICING AND FEATURES
+DO SAME FOR LARGE*/
+.pages-hero-mobile .pages-hero-img-container {
   position: relative;
 }
+
+.pages-hero-mobile .pages-hero-img-container::after {
+  content: "";
+  position: absolute;
+  background: rgb(255,197,147);
+  background: linear-gradient(45deg, rgba(255,197,147,1) 0%, rgba(188,113,152,1) 51.95%, rgba(90,119,255,1) 100%);
+  height: 0.375rem;
+  width: 30%;
+  left: 20px;
+  bottom: -6px;
+  display: block;
+}
+
+
+
+.home .pages-hero-img-container::after {
+ display: none;
+}
+
+.home .pages-hero-tablet .pages-hero-img-container {
+  
+}
+.home .pages-hero-tablet .pages-hero-img-container::after {
+  
+}
+
+/************************/
 
 /*homepage hero only*/
 
