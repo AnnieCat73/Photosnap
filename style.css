@@ -8,6 +8,7 @@
   --dark-700: #f5f5f5;
 
   --grey-100: #979797;
+  --grey-200: #e0dcdc;
 
   --light-100: #ffffff;
 
@@ -1252,12 +1253,14 @@ body, html {
 .toggle {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2.5em;
 }
 
 .switch-heading {
   font-size: var(--fs-600);
   line-height: 2.5;
+  font-weight: var(--fw-regular-400);
 }
 
 
@@ -1292,7 +1295,7 @@ body, html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--dark-700);
+  background-color: var(--grey-200);
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 16px;
@@ -1312,19 +1315,36 @@ body, html {
   border-radius: 50%;
 }
 
+.regular {
+  font-weight: var(--fw-regular-400);
+}
 
-/*Toggle in JS
-input:checked + .slider,
-input:focus + .slider {
-  /*background-color: var(--dark-100);*/
-  /*color: var(--light-100);
-}*/
+.change {
+  font-weight: bold;
+}
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-color: var(--light-100);
+}
+
+input:checked + .slider {
+  background-color: var(--dark-100);
+}
+
+input:checked + .slider:before .switch-heading {
+  font-weight: var(--fw-bold-700);
+}
+
+
 
 /*plan*/
 
@@ -1431,7 +1451,7 @@ input:checked + .slider:before {
 }
 
 @media (min-width: 48em) {
-  
+
   /*plans*/
 
   .plan {

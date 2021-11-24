@@ -41,3 +41,23 @@ closeBtn.addEventListener("click", () => {
 
 });*/
 
+
+//Toggle Monthly and Yearly text bold when pressing the switch
+
+const textChange = document.getElementById("jsTextChange");
+const switchHeading1 = document.querySelector(".switch-heading-1");
+const switchHeading2 = document.querySelector(".switch-heading-2");
+
+textChange.addEventListener("click", function () {
+
+  if (switchHeading1.classList.contains("change")) {
+    switchHeading1.classList.remove("change");
+    switchHeading2.classList.add("change");
+  } else {
+    switchHeading1.classList.add("change");
+    switchHeading2.classList.remove("change");
+  }
+});
+
+
+
