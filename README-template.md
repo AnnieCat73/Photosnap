@@ -45,9 +45,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ## My process
 
 - I studied the figma file to work out how to lay out the pages, which sections should be laid out in Flexbox or CSS Grid.
-- From the Figma file I also figured out the CSS variables to use and set up utility classes. 
+- From the Figma file I also figured out the CSS variables to use and set up utility classes for the site. 
 - I did it in mobile first approach, but the HTML was coded from the desktop layout whilst the CSS was done from mobile up!
-- I set up the layout for each page and then did each section separately in mobile, tablet and desktop.
+- I set up the layout for each page and then did each section separately in mobile, tablet and then desktop.
 
 
 
@@ -66,17 +66,14 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-This challenge was a bit test of my CSS Grid and Flexbox skills. After completing it I feel a lot more comfortable with CSS Grid and Flexbox for laying out the pages and the individual sections. My css is flowing more naturrally and I understand better what I have to do when I encounted any issues I couldn't fix at first try. A good tip is to move on to something else while your mind is solving the issue in the background! It really works even though it may take a day to crystalise!
+This challenge was a bit test of my CSS Grid and Flexbox skills. After completing it I feel a lot more comfortable with CSS Grid and Flexbox for laying out the pages and the individual sections. My css is flowing more naturrally and I understand better what I have to do when I encountered any issues I couldn't fix at first try. A good tip is to move on to something else while your mind is solving the issue in the background! It really works even though it may take a day or two to crystalise!
 
-
-
+Svgs were used a lot throughout the site, in the social links on hover, and when moving svgs around in the grid container. I was experiencing some issues here and after spending a lot of time researching how to solve them I had to settle for some self made hacks that aren't completely like the figma design file but still works well! The one take from this project is that I will have to study more on how to work with svgs.
 
 
 ### Continued development
 
 I am eager to do more similar projects and improve more. Still need to work on my Javascript as sometimes I overcomplicate things!
-
-
 
 ### Useful resources
 
