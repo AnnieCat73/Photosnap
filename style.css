@@ -56,11 +56,6 @@
   }
 }
 
-@media (min-width: 40em) {
-  :root {
-    
-  }
-}
 
 /* reset */
 
@@ -69,18 +64,6 @@
 *::after {
   box-sizing: border-box;
 }
-
-/*
-h1,
-.h1,
-h2,
-.h2, 
-h3,
-.h3,
-h4,
-.h4 {
-  line-height: 1;
-}*/
 
 body,
 h1,
@@ -130,7 +113,7 @@ body, html {
 
 /* typography */
 
-.large-heading {/*for h1/h2 large*/
+.large-heading {
   font-size: var(--fs-900);
   font-weight: var(--fw-bold-700);
   letter-spacing: 3.33px;
@@ -138,10 +121,10 @@ body, html {
   text-transform: uppercase;
 }
 
-.medium-heading {/*h2 - same for all*/
+.medium-heading {
   font-size: var(--fs-700);
   font-weight: var(--fw-bold-700);
-  letter-spacing: 3; /*25px*/
+  letter-spacing: 3; 
 }
 
 .small-heading {
@@ -150,9 +133,9 @@ body, html {
 }
 
 .small-headingxl {
-  font-size: var(--fs-300);/*same for all*/
+  font-size: var(--fs-300);
   letter-spacing: 2px;
-  /*text-transform: uppercase;*/
+  
 }
 
 
@@ -163,7 +146,7 @@ body, html {
   }
 }
 
-@media (min-width: 48em) {/*48em is tablet*/
+@media (min-width: 48em) {
 
 }
 
@@ -206,7 +189,7 @@ body, html {
 
 .arrow-btn-light {
   color: var(--light-100);
-  font-size: var(--fs-300);/*12px*/
+  font-size: var(--fs-300);
   font-weight: var(--fw-bold-700);
   letter-spacing: 2px;
 }
@@ -217,7 +200,7 @@ body, html {
 
 .arrow-btn-dark {
   color: var(--dark-100);
-  font-size: var(--fs-300);/*12px*/
+  font-size: var(--fs-300);
   font-weight: var(--fw-bold-700);
   letter-spacing: 2px;
 }
@@ -324,7 +307,11 @@ body, html {
 
 /*Header*/
 
-/*menu in mobile and tables*/
+/*menu in mobile*/
+
+body {
+  padding-top: 5rem;
+}
 
 
 .header .header-desktop {
@@ -334,8 +321,8 @@ body, html {
 
 /*menu mobile*/
 
-.header .header-mobile {/*MIGHT TAKE THIS OFF IF CAN'T GET IT WORKING*/
-  position: fixed;/*NEEED TO MOVE CONTETN DOWN AS COVERS IMG MOBILE*/
+.header .header-mobile {
+  position: fixed;
   top: 0;
   width: 100%;
   background-color: var(--light-100);
@@ -374,7 +361,7 @@ body, html {
   display: none;
 }
 
-.dropdown .jsmenu {
+.dropdown  {
   display: block;
 }
 
@@ -391,6 +378,7 @@ body, html {
   align-items: center;
   text-align: center;
   padding: 1em;
+  display: none;/*hidden by default*/
 }
 
 .dropdown-list {
@@ -442,7 +430,11 @@ body, html {
 
 @media (min-width: 48em) {
 
-  /*header tablet*/
+  /*header*/
+
+  body {
+    padding-top: 0;
+  }
 
   .header .header-mobile {
     display: none;
