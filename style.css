@@ -1020,13 +1020,11 @@ body, html {
   flex-direction: column-reverse;
 }
 
-/*HOW TO GET THIS TO SHOW ONLY ON HERO IMG CHANGE HTML?? OK FOR PRICING AND FEATURES
-DO SAME FOR LARGE*/
-.pages-hero-mobile .pages-hero-img-container {
+.pages-hero-mobile .create {
   position: relative;
 }
 
-.pages-hero-mobile .pages-hero-img-container::after {
+.pages-hero-mobile .create::after {
   content: "";
   position: absolute;
   background: rgb(255,197,147);
@@ -1034,32 +1032,15 @@ DO SAME FOR LARGE*/
   height: 0.375rem;
   width: 30%;
   left: 20px;
-  bottom: -6px;
+  top: 0;
   display: block;
 }
-
-
-
-.home .pages-hero-img-container::after {
- display: none;
-}
-
-.home .pages-hero-tablet .pages-hero-img-container {
-  
-}
-.home .pages-hero-tablet .pages-hero-img-container::after {
-  
-}
-
-/************************/
 
 /*homepage hero only*/
 
 .home .pages-hero .pages-hero-img-container {
   order: 3;
 }
-
-
 
 /* features details */
 
@@ -1109,11 +1090,6 @@ DO SAME FOR LARGE*/
     order: -3;
   }
 
-  
-  
-
-
-
   /*homepage/features/pricing hero*/
   .pages-hero .pages-hero-mobile {
     display: none;
@@ -1142,11 +1118,11 @@ DO SAME FOR LARGE*/
     max-width: 42ch;
   }
 
-  .pages-hero-info {
+  .pages-hero-tablet .create {
     position: relative;
   }
   
-  .pages-hero-info::after {
+  .pages-hero-tablet .create::after {
     content: "";
     position: absolute;
     width: 0.375rem;
@@ -1213,6 +1189,21 @@ DO SAME FOR LARGE*/
     flex-direction: column;
     justify-content: center;
   }
+
+  .pages-hero-desktop .create {
+    position: relative;
+  }
+  
+  .pages-hero-desktop .create::after {
+    content: "";
+    position: absolute;
+    width: 0.375rem;
+    height: 9rem;
+    background: rgb(255,197,147);
+    background: linear-gradient(45deg, rgba(255,197,147,1) 0%, rgba(188,113,152,1) 51.95%, rgba(90,119,255,1) 100%);
+    left: 0;
+  }
+  
 
   .pages-hero-desktop .margin-text {
     max-width: 42ch;
