@@ -1,4 +1,4 @@
-//To open and close menu in mobile
+//To open and close dropdown menu in mobile view
 
 const menuBtn = document.querySelector(".open");
 const closeBtn = document.querySelector(".close");
@@ -10,39 +10,17 @@ menuBtn.addEventListener("click", () => {
   menuBtn.style.display = "none";
   closeBtn.style.display = "block";
   dropdown.style.display = "block";
-
 });
 
 closeBtn.addEventListener("click", () => {
   menuBtn.style.display = "block";
   closeBtn.style.display = "none";
   dropdown.style.display = "none";
-
 });
 
-/*menuBtn.addEventListener("click", () => {
-
-  if () {
-
-  } else {
 
 
-
-
-
-});
-
-closeBtn.addEventListener("click", () => {
-  if () {
-
-  } else {
-
-  }
-
-});*/
-
-
-//Toggle Monthly and Yearly text bold when pressing the switch
+//Toggle Monthly and Yearly text bold when pressing the switch in the Pricing page
 
 const textChange = document.getElementById("jsTextChange");
 const switchHeading1 = document.querySelector(".switch-heading-1");
