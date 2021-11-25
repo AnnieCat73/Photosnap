@@ -184,7 +184,7 @@ body, html {
   line-height: 1.125;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1em 1.5em;
+  padding: 1em 3em;
 }
 
 .arrow-btn-light {
@@ -682,7 +682,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 4fr 2fr;
   gap: 3em;
-  padding: 
 }
 
 .social {
@@ -884,7 +883,7 @@ body {
 
 /* PAGE SPECIFIC */
 
-/*All extra pages hover states - disabled in header and footer*/
+/*All extra pages hover states - disabled in header and footer
 
 .stories .header .nav-item:hover,
 .stories .header .nav-item:focus,
@@ -919,7 +918,7 @@ body {
 .features .footer .footer-link:hover,
 .features .footer .footer-link:focus {
   pointer-events: none;
-}
+}*/
 
 /*********************/
 /** STORIES
@@ -960,7 +959,11 @@ body {
     background-repeat: no-repeat;
     padding: 10rem 0 10rem 0;
     background-position: center;
-    filter: brightness(60%);
+    filter: brightness(80%);
+  }
+
+  .stories-hero-large .filter  {
+    filter: brightness(70%);
   }
 
   .stories-hero-content {
@@ -986,6 +989,10 @@ body {
     padding: 10rem 0 10rem 0;
     background-position: center;
     min-height: 100vh;
+  }
+
+  .stories-hero-content {
+    max-width: 28rem;
   }
 }
 
