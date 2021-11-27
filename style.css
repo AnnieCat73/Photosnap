@@ -19,14 +19,13 @@
   
   /*small screen font-sizes - 16px is base font-size */
   
-  --fs-300: 0.75rem; /*12px*/
-  --fs-350: 0.813rem; /*13px author*/
-  --fs-400: 0.938rem;/*15px same on all sizes*/
-  --fs-500: 1rem;/*px*/
-  --fs-600: 1.125rem; /*px*/
-  --fs-700: 1.5rem;/*24px/h2 medium*/
-  --fs-900: 2rem;/*h1/h2 large*/
-  --fs-950: 2.5rem;/*price*/
+  --fs-300: 0.75rem; 
+  --fs-350: 0.813rem; 
+  --fs-400: 0.938rem;
+  --fs-600: 1.125rem; 
+  --fs-700: 1.5rem;
+  --fs-900: 2rem;
+  --fs-950: 2.5rem;
 
   --fw-regular-400: 400;
   --fw-bold-700: 700;
@@ -34,7 +33,7 @@
 }
 
 
-@media (min-width: 40em) {/*tablet*/
+@media (min-width: 40em) {
   :root {
     --fs-900: 2.5rem;
   }
