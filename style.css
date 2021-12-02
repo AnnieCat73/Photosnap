@@ -243,8 +243,6 @@ body, html {
 
 /*Header*/
 
-/*menu in mobile*/
-
 body {
   padding-top: 5rem;
 }
@@ -517,8 +515,6 @@ body {
     left: 3rem;
   }
 }
-
-
 
 
 @media (min-width: 90em) {
@@ -927,9 +923,9 @@ body {
 }
 
 
-/*********************/
+/**********************************/
 /** HOMEPAGE/FEATURES/PRICING HERO
-/*********************/
+/**********************************/
 
 .pages-hero .pages-hero-tablet,
 .pages-hero .pages-hero-desktop {
@@ -1299,6 +1295,7 @@ input:checked + .slider:before .switch-heading {
 }
 
 /*pro-rectangle mobile*/
+
 .pro {
   position: relative;
 }

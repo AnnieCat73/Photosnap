@@ -20,7 +20,7 @@ closeBtn.addEventListener("click", () => {
 
 
 
-//Toggle Monthly and Yearly text bold when pressing the switch in the Pricing page
+//Toggle Monthly and Yearly text bold when pressing the switch on the Pricing page
 
 const textChange = document.getElementById("jsTextChange");
 const switchHeading1 = document.querySelector(".switch-heading-1");
