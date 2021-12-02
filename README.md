@@ -64,7 +64,7 @@ I am eager to do more similar projects and improve more. Still need to work on m
 ## Author
 
 - Website - [Annie Indreiten](https://www.your-site.com)
-- Twitter - [@annie_indreiten]
+- LinkedIn - https://www.linkedin.com/in/annie-indreiten777/
 
 
 
